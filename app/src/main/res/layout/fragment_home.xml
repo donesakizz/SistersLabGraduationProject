@@ -35,14 +35,14 @@
             android:id="@+id/toolbarHomepage"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="?attr/colorPrimary"
+            android:background="@color/purple"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:subtitleTextColor="#371F1F"
+            app:subtitleTextColor="#E6D9D9"
             app:title="recipe"
             app:titleTextColor="#FFFFFF" />
 
