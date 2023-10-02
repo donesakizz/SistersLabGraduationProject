@@ -71,6 +71,9 @@ class RecipeAddFragment : Fragment() {
         val tempViewModel : AddViewModel by viewModels()
         viewModel = tempViewModel
     }
+
+    //Bu metot, viewModel üzerinden modelAdd() fonksiyonunu çağırarak bir tarifi eklemek için kullanılır.
+    // Bu metot, Recipe nesnesini parametre olarak alır ve bu nesneyi ViewModel'deki ilgili fonksiyona geçer.
     fun add(request: Recipe){
         viewModel.modelAdd(request)
     }

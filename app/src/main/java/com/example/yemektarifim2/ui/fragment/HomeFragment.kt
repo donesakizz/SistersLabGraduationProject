@@ -37,7 +37,7 @@ class HomeFragment : Fragment() ,SearchView.OnQueryTextListener{
         binding.toolbarHomepage.title = "Tariflerim"
         (activity as AppCompatActivity).setSupportActionBar(binding.toolbarHomepage)
 
-         //binding.rv.layoutManager= LinearLayoutManager(requireContext())
+         //u, tarif listesinin güncellendiğinde RecyclerView'a yeni bir adaptör atar. Eğer liste boşsa, bir Snackbar mesajı gösterir.
         viewModel.recipesList.observe(viewLifecycleOwner){
             if(it!=null){
                 val adapter = RecipesAdapter(requireContext(),it,viewModel)
@@ -53,6 +53,8 @@ class HomeFragment : Fragment() ,SearchView.OnQueryTextListener{
         }
 
 
+        //Bu metot, fragment'ın menu işlemlerini yönetir.
+        // Toolbar'da bir arama işlemini desteklemek için onCreateMenu metodu içinde arama özelliği eklenir.
         requireActivity().addMenuProvider(object : MenuProvider {
             override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
                 menuInflater.inflate(R.menu.toolbar_menu,menu)
@@ -69,19 +71,23 @@ class HomeFragment : Fragment() ,SearchView.OnQueryTextListener{
         return binding.root
     }
 
-
+   //Bu metot, fragment oluşturulduğunda çalışır.
+   // Bu metod içinde HomeViewModel sınıfından bir örnek alınır ve viewModel değişkenine atanır.
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val tempViewModel : HomeViewModel by viewModels ()
         viewModel = tempViewModel
     }
 
-
+    // Bu metot, fragment kullanıcının görüntülendiği durumdayken çağrılır.
+    // Bu metod içinde modelLoadRecipes() fonksiyonu çağrılarak tarifler yüklenir.
     override fun onResume() {
         super.onResume()
         viewModel.modelLoadRecipes()
     }
 
+    //SearchView'deki metin değiştiğinde ve kullanıcı arama sorgusunu gönderdiğinde çağrılır.
+    // Bu metotlar, HomeViewModel sınıfındaki modelSearch() metodunu çağırarak arama sorgusunu işler.
     override fun onQueryTextSubmit(query: String?): Boolean {
         viewModel.modelSearch(query.toString())
         return true

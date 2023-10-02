@@ -74,7 +74,7 @@ class RecipeUpdateFragment : Fragment() {
     fun update(request:Recipe){
         viewModel.modelUpdate(request)
     }
-// bu yaptığımız gelen veriyi düzenleyip push etme aşaması henüz o yemek tarifini güncelleme ekranına getirmedik
+
 
 
 

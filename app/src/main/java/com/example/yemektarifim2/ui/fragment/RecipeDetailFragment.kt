@@ -32,14 +32,13 @@ class RecipeDetailFragment : Fragment() {
 
 
         viewModel.recipeDetail.observe(viewLifecycleOwner){ recipeDetail->//Recipe type
-            //bu kısım eğer birden fazla detay gelirse?
 
-            // design.recipeDetailIdName.text= "${recipeDetail.id} - ${recipeDetail.name}"
+
             design.toolbar.title= "${recipeDetail.id}-${recipeDetail.name}"
             design.recipeDetailDescription.text=  recipeDetail.description
 
         }
-        //  design.recipeDetailDescription.text=  viewModel.modelGetRecipeDetail(recipeId)
+
 
         return design.root
     }
