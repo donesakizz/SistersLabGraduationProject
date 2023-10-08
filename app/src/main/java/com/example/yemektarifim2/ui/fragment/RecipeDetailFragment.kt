@@ -19,9 +19,7 @@ class RecipeDetailFragment : Fragment() {
     private val viewModel: DetailViewModel by viewModels()
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         design = FragmentRecipeDetailBinding.inflate(inflater,container,false)
 
         val bundle: RecipeDetailFragmentArgs by navArgs()

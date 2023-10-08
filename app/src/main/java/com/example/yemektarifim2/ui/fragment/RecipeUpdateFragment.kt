@@ -51,10 +51,10 @@ class RecipeUpdateFragment : Fragment() {
                         "${recipeName.uppercase()} güncellendi.",
                         Toast.LENGTH_LONG
                     ).show()
-                    //OnClick Listener
+
                 }
                 alert.setNegativeButton("HAYIR") { dialog, which ->
-                    //OnClick Listener
+
                     Toast.makeText(
                         requireContext(),
                         "${recipeName.uppercase()} Güncellenmedi!",
