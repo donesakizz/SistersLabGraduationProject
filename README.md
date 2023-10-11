@@ -1,8 +1,9 @@
 # SistersLabGraduationProject
 Recipe application was made using Api, mvvm architect and  navigation component.
 # ScreenShots
-![Ekran Görüntüsü (1399)](https://github.com/donesakizz/SistersLabGraduationProject/assets/108996200/4551c667-d177-4384-bd36-1552240b89f5)
-![Ekran Görüntüsü (1400)](https://github.com/donesakizz/SistersLabGraduationProject/assets/108996200/b5480af1-109f-44a7-8e99-897064329492) ![Ekran Görüntüsü (1401)](https://github.com/donesakizz/SistersLabGraduationProject/assets/108996200/d614f5a7-8c42-4e1b-9a75-0bac4248c7f5)
+![Ekran Görüntüsü (1399)](https://github.com/donesakizz/SistersLabGraduationProject/assets/108996200/19a42437-991b-4b87-b032-d76e7da813fa)
+![Ekran Görüntüsü (1400)](https://github.com/donesakizz/SistersLabGraduationProject/assets/108996200/25c79df0-5fc5-4151-9b4e-05a8bfb32af5)
+![Ekran Görüntüsü (1401)](https://github.com/donesakizz/SistersLabGraduationProject/assets/108996200/94ea53a1-d55b-4070-86e1-43b72732ad8e)
 
 # The structures I used in the project
 - MVVM architecture
